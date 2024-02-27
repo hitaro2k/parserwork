@@ -1,3 +1,25 @@
-from pages import max_pages
+from global_news import main_page
 
-max_pages = max_pages()
+news ={
+    "global_news":{
+        "eu":[],
+        "us":[],
+        "tech":[],
+        "ent":[],
+        "other":[]
+    },
+    "ukraine_news":{
+
+    }
+}
+
+
+main_page(news["global_news"]["eu"],
+      news["global_news"]["us"],
+      news["global_news"]["tech"],
+      news["global_news"]["ent"],
+      news["global_news"]["other"])
+
+
+
+print(news["global_news"]["us"])
