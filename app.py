@@ -7,9 +7,6 @@ news ={
         "tech":[],
         "ent":[],
         "other":[]
-    },
-    "ukraine_news":{
-
     }
 }
 
@@ -22,4 +19,4 @@ main_page(news["global_news"]["eu"],
 
 
 
-print(news["global_news"]["us"])
+print(news["global_news"]["other"])
