@@ -30,10 +30,10 @@ def main_page(eu, us , tech , ent , other):
         list = lists.find('ul', attrs={"role": "list"})
         list_items = list.find_all('li')
         for list_item in list_items:
-            f = list_item.find("div", attrs={"data-testid": "promo"})
+            promoDiv = list_item.find("div", attrs={"data-testid": "promo"})
             list_links = list_item.find("a")
-            if list_links is not None and f is not None:
-                for text in f:
+            if list_links is not None and promoDiv is not None:
+                for text in promoDiv:
                     link = text.findAll("a")
                     for link_title in link:
                         textsa = text.text
